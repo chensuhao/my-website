@@ -1,68 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using CloudBase Webify">
-    <title>Hello Webify！</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        code {
-            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-                monospace;
-        }
-        .App {
-            text-align: center;
-        }
-
-        .App-logo {
-            height: 40vmin;
-            pointer-events: none;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            .App-logo {
-                animation: App-logo-spin infinite 20s linear;
-            }
-        }
-
-        .App-header {
-            background-color: #efefef;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            color: black;
-        }
-
-        .App-link {
-            color: #108ee9;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>陈陈的网站</title>
+    <link rel="stylesheet" href="./html.css">
 </head>
-
 <body>
-    <div id="root">
-        <div class="App">
-            <header class="App-header">
-                <img src="https://main.qcloudimg.com/raw/2f3b21706c37e8685efe5c60b26ceb24.png" class="App-logo" alt="logo">
-                <p>Welcome to Webify！</p>
-                <a class="App-link" href="https://webify.cloudbase.net/"
-                    target="_blank" rel="noopener noreferrer">webify.cloudbase.net</a>
-            </header>
-        </div>
-    </div>
-</body>
 
+<audio src="./2前奏(1).mp3" autostart="true" preload></audio>
+
+<div class="slider">
+  <input name="control" id="page1" type="radio" checked/>
+  <input name="control" id="page2" type="radio"/>
+  <input name="control" id="page3" type="radio"/>
+  <input name="control" id="page4" type="radio"/>
+  
+  <div class="slider--el slider--el-1 anim-4parts">    
+  
+    <div class="slider--el-bg">
+      <div class="part top left"></div>
+      <div class="part top right"></div>
+      <div class="part bot left"></div>
+      <div class="part bot right"></div>
+    </div>
+    <div class="slider--el-content">
+     
+      <h2 class="slider--el-heading">First Slide 陈陈</h2>
+    </div>
+  </div>
+
+  <div class="slider--el slider--el-2 anim-9parts">
+    
+    <div class="slider--el-bg">
+      <div class="part left-top"></div>
+      <div class="part mid-top"></div>
+      <div class="part right-top"></div>
+      <div class="part left-mid"></div>
+      <div class="part mid-mid"></div>
+      <div class="part right-mid"></div>
+      <div class="part left-bot"></div>
+      <div class="part mid-bot"></div>
+      <div class="part right-bot"></div>
+    </div>
+    <div class="slider--el-content">
+     
+      <h2 class="slider--el-heading">吃的</h2>
+    </div>
+  </div>
+
+  <div class="slider--el slider--el-3 anim-5parts">
+  
+    <div class="slider--el-bg">
+      <div class="part part-1"></div>
+      <div class="part part-2"></div>
+      <div class="part part-3"></div>
+      <div class="part part-4"></div>
+      <div class="part part-5"></div>
+    </div>
+    <div class="slider--el-content">
+      
+      <h2 class="slider--el-heading">Third Slide</h2>
+    </div>
+  </div>
+
+  <div class="slider--el slider--el-4 anim-3parts">
+  
+    <div class="slider--el-bg">
+      <div class="part left"></div>
+      <div class="part mid"></div>
+      <div class="part right"></div>
+    </div>
+    <div class="slider--el-content">
+    
+      <h2 class="slider--el-heading">感谢观看</h2>
+    </div>
+  </div>
+  <div class="slider--control left">
+    <label class="page1-left" for="page1"></label>
+    <label class="page2-left" for="page2"></label>
+    <label class="page3-left" for="page3"></label>
+    <label class="page4-left" for="page4"></label>
+  </div>
+  <div class="slider--control right">
+    <label class="page1-right" for="page1"></label>
+    <label class="page2-right" for="page2"></label>
+    <label class="page3-right" for="page3"></label>
+    <label class="page4-right" for="page4"></label>
+  </div>  
+</div>
+
+</body>
 </html>
